@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: "{{ include "alpine-sshd.fullname" . }}-test-connection"
+  labels:
+    {{- include "alpine-sshd.labels" . | nindent 4 }}
+  annotations:
+    "helm.sh/hook": test
+spec:
+  containers:
+    - name: wget
+      image: busybox
+      command: ['wget']
+      args: ['{{ include "alpine-sshd.fullname" . }}:{{ .Values.service.port }}']
+  restartPolicy: Never

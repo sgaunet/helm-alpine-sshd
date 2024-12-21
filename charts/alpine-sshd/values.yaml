@@ -1,0 +1,63 @@
+# Declare variables to be passed into your templates.
+# -- number of replicas
+replicaCount: 1
+# -- additional deployment labels (will be merged with the default labels)
+additionalLabels: {}
+# additionalLabels:
+#   exposed: "true"
+
+# -- additional annotations
+additionalAnnotations: {}
+
+image:
+  # -- image repository
+  repository: sgaunet/alpine-sshd:0.6.1
+  pullPolicy: IfNotPresent
+  # -- Overrides the image tag whose default is the chart appVersion.
+  tag: ""
+
+# -- image pull secrets
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+podAnnotations: {}
+podSecurityContext: {}
+# fsGroup: 2000
+
+securityContext: {}
+# capabilities:
+#   drop:
+#   - ALL
+# readOnlyRootFilesystem: true
+# runAsNonRoot: true
+# runAsUser: 1000
+service:
+  type: ClusterIP
+  port: 22
+
+resources:
+  limits:
+    cpu: 200m
+    memory: 64Mi
+  requests:
+    cpu: 200m
+    memory: 64Mi
+
+nodeSelector: {}
+tolerations: []
+affinity: {}
+
+configuration:
+  # -- Add authentication keys to the authorized_keys file
+  AUTHORIZED_KEYS: ""
+  # -- specify the ssh password for sshuser
+  SSHUSER_PASSWORD: "sshpassword"
+  # -- folders to create in /data
+  DATA_FOLDERS: "folder1 folder2 folder3"
+  # -- purge files older than this value in minutes
+  DELETEOLDERFILESINMIN: "30"
+
+# -- additional configmap or secret. 
+additionalEnvFrom: []
+# - configMapRef:
+#     name: common-configmap1
