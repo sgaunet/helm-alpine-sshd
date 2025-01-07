@@ -3,6 +3,17 @@ entries:
   alpine-sshd:
   - apiVersion: v2
     appVersion: 0.6.1
+    created: "2025-01-07T13:48:04.981266315Z"
+    description: A Helm chart for Kubernetes
+    digest: e281877f61ccdb063d7c8dce729a759f2396044f007cffa16c0df9c3f9d7778e
+    icon: view-source:https://raw.githubusercontent.com/sgaunet/helmchart-helper/main/ico/helm.ico
+    name: alpine-sshd
+    type: application
+    urls:
+    - https://github.com/sgaunet/helm-alpine-sshd/releases/download/alpine-sshd-0.1.1/alpine-sshd-0.1.1.tgz
+    version: 0.1.1
+  - apiVersion: v2
+    appVersion: 0.6.1
     created: "2024-12-21T20:14:02.232269691Z"
     description: A Helm chart for Kubernetes
     digest: 2b4da64eddb73ad83dfbce05f740591c32b6decbb5945b608ad19c145684c112
@@ -12,4 +23,4 @@ entries:
     urls:
     - https://github.com/sgaunet/helm-alpine-sshd/releases/download/alpine-sshd-0.1.0/alpine-sshd-0.1.0.tgz
     version: 0.1.0
-generated: "2024-12-21T20:14:02.232281373Z"
+generated: "2025-01-07T13:48:04.98127958Z"
