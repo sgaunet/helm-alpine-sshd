@@ -11,7 +11,7 @@ additionalAnnotations: {}
 
 image:
   # -- image repository
-  repository: sgaunet/alpine-sshd:0.6.1
+  repository: sgaunet/alpine-sshd
   pullPolicy: IfNotPresent
   # -- Overrides the image tag whose default is the chart appVersion.
   tag: ""
