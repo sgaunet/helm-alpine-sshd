@@ -1,6 +1,6 @@
 # alpine-sshd
 
-![Version: 0.2.1](https://img.shields.io/badge/Version-0.2.1-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.8.0](https://img.shields.io/badge/AppVersion-0.8.0-informational?style=flat-square)
+![Version: 0.2.2](https://img.shields.io/badge/Version-0.2.2-informational?style=flat-square) ![Type: application](https://img.shields.io/badge/Type-application-informational?style=flat-square) ![AppVersion: 0.8.0](https://img.shields.io/badge/AppVersion-0.8.0-informational?style=flat-square)
 
 A Helm chart for Kubernetes
 
@@ -18,7 +18,7 @@ A Helm chart for Kubernetes
 | configuration.SSHUSER_PASSWORD | string | `"sshpassword"` | specify the ssh password for sshuser |
 | fullnameOverride | string | `""` |  |
 | image.pullPolicy | string | `"IfNotPresent"` |  |
-| image.repository | string | `"sgaunet/alpine-sshd"` | image repository |
+| image.repository | string | `"ghcr.io/sgaunet/alpine-sshd"` | image repository |
 | image.tag | string | `""` | Overrides the image tag whose default is the chart appVersion. |
 | imagePullSecrets | list | `[]` | image pull secrets |
 | nameOverride | string | `""` |  |
