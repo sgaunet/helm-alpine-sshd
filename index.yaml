@@ -2,6 +2,18 @@ apiVersion: v1
 entries:
   alpine-sshd:
   - apiVersion: v2
+    appVersion: 0.10.0
+    created: "2025-09-25T20:34:47.385612847Z"
+    description: Alpine Linux SSH server deployment for Kubernetes with configurable
+      authentication and data management
+    digest: 7eff23221238324bea0ef54120915436858878856ab29a0e9916f15ef81b973d
+    icon: view-source:https://raw.githubusercontent.com/sgaunet/helmchart-helper/main/ico/helm.ico
+    name: alpine-sshd
+    type: application
+    urls:
+    - https://github.com/sgaunet/helm-alpine-sshd/releases/download/alpine-sshd-0.2.3/alpine-sshd-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
     appVersion: 0.8.0
     created: "2025-05-13T19:31:39.397492124Z"
     description: A Helm chart for Kubernetes
@@ -78,4 +90,4 @@ entries:
     urls:
     - https://github.com/sgaunet/helm-alpine-sshd/releases/download/alpine-sshd-0.1.0/alpine-sshd-0.1.0.tgz
     version: 0.1.0
-generated: "2025-05-13T19:31:39.397520147Z"
+generated: "2025-09-25T20:34:47.385652331Z"
